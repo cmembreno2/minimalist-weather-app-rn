@@ -37,7 +37,7 @@ export default class App extends React.Component {
     console.log(process.env);
 
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${"28643077d6936d2279056a7788fa22fc"}&units=metric`
+      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${"own Api Key"}&units=metric`
     )
       .then(res => res.json())
       .then(json => {
